@@ -14,7 +14,7 @@ const Register = () => {
     <div className="min-h-screen flex items-center justify-center p-4">
       <div className="bg-secondary-100 p-8 rounded-xl shadow-2xl w-auto lg:w-[450px]">
         <h1 className="text-3xl text-center uppercase font-bold tracking-[5px] text-white mb-8">
-          Crear <span className="text-primary">cuenta</span>
+          Créer <span className="text-primary">compte</span>
         </h1>
         <form className="mb-8">
           <button className="flex items-center justify-center py-3 px-4 gap-4 bg-secondary-900 w-full rounded-full mb-8 text-gray-100">
@@ -22,7 +22,7 @@ const Register = () => {
               src="https://rotulosmatesanz.com/wp-content/uploads/2017/09/2000px-Google_G_Logo.svg_.png"
               className="w-4 h-4"
             />
-            Registrate con google
+            Inscrivez-vous avec Google
           </button>
           <div className="relative mb-4">
             <RiUserLine className="absolute top-1/2 -translate-y-1/2 left-2 text-primary" />
@@ -45,7 +45,7 @@ const Register = () => {
             <input
               type="email"
               className="py-3 pl-8 pr-4 bg-secondary-900 w-full outline-none rounded-lg"
-              placeholder="Correo electrónico"
+              placeholder="Courrier électronique"
             />
           </div>
           <div className="relative mb-4">
@@ -53,7 +53,7 @@ const Register = () => {
             <input
               type={showPassword ? "text" : "password"}
               className="py-3 px-8 bg-secondary-900 w-full outline-none rounded-lg"
-              placeholder="Contraseña"
+              placeholder="Mot de passe"
             />
             {showPassword ? (
               <RiEyeOffLine
@@ -72,7 +72,7 @@ const Register = () => {
             <input
               type={showPassword ? "text" : "password"}
               className="py-3 px-8 bg-secondary-900 w-full outline-none rounded-lg"
-              placeholder="Confirmar contraseña"
+              placeholder="Confirmer mot de passe"
             />
             {showPassword ? (
               <RiEyeOffLine
@@ -91,17 +91,17 @@ const Register = () => {
               type="submit"
               className="bg-primary text-black uppercase font-bold text-sm w-full py-3 px-4 rounded-lg"
             >
-              Registrarme
+             Registre
             </button>
           </div>
         </form>
         <span className="flex items-center justify-center gap-2">
-          ¿Ya tienes cuenta?{" "}
+          Vous avez déjà un compte?{" "}
           <Link
             to="/login"
             className="text-primary hover:text-gray-100 transition-colors"
           >
-            Ingresa
+            Entrer
           </Link>
         </span>
       </div>

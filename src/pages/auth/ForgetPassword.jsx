@@ -7,7 +7,7 @@ const ForgetPassword = () => {
     <div className="min-h-screen flex items-center justify-center p-4">
       <div className="bg-secondary-100 p-8 rounded-xl shadow-2xl w-auto lg:w-[450px]">
         <h1 className="text-3xl text-center uppercase font-bold tracking-[5px] text-white mb-8">
-          Recuperar <span className="text-primary">contraseña</span>
+          Récupérer <span className="text-primary">mot de passe</span>
         </h1>
         <form className="mb-8">
           <div className="relative mb-8">
@@ -15,7 +15,7 @@ const ForgetPassword = () => {
             <input
               type="email"
               className="py-3 pl-8 pr-4 bg-secondary-900 w-full outline-none rounded-lg"
-              placeholder="Correo electrónico"
+              placeholder="Courrier électronique"
             />
           </div>
           <div>
@@ -23,27 +23,27 @@ const ForgetPassword = () => {
               type="submit"
               className="bg-primary text-black uppercase font-bold text-sm w-full py-3 px-4 rounded-lg"
             >
-              Enviar instrucciones
+              envoyer des instructions
             </button>
           </div>
         </form>
         <div className="flex flex-col items-center gap-4">
           <span className="flex items-center gap-2">
-            ¿Ya tienes cuenta?{" "}
+            Avez-vous déjà un compte?{" "}
             <Link
               to="/login"
               className="text-primary hover:text-gray-100 transition-colors"
             >
-              Ingresa
+              Connexion
             </Link>
           </span>
           <span className="flex items-center gap-2">
-            ¿No tienes cuenta?{" "}
+            Vous n'avez pas de compte ?{" "}
             <Link
-              to="/registro"
+              to="/register"
               className="text-primary hover:text-gray-100 transition-colors"
             >
-              Registrate
+              Registre
             </Link>
           </span>
         </div>

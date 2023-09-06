@@ -10,22 +10,27 @@ import ForgetPassword from "./pages/auth/ForgetPassword";
 // Pages admin
 import Home from "./pages/admin/Home";
 import Profile from "./pages/admin/Profile";
-import Chat from "./pages/admin/Chat";
+
 import Error404 from "./pages/Error404";
-import Tickets from "./pages/admin/Tickets";
+import Conducteurs from "./pages/admin/Conducteurs";
+import Bus from "./pages/admin/Bus";
+import Trajets from "./pages/admin/Trajets";
+import Comptes from "./pages/admin/Comptes";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/login" element={<Login />} />
-        <Route path="/registro" element={<Register />} />
-        <Route path="/olvide-password" element={<ForgetPassword />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/forgot-password" element={<ForgetPassword />} />
         <Route path="/" element={<LayoutAdmin />}>
           <Route index element={<Home />} />
           <Route path="perfil" element={<Profile />} />
-          <Route path="chat" element={<Chat />} />
-          <Route path="tickets" element={<Tickets />} />
+          <Route path="conducteurs" element={< Conducteurs />} />
+          <Route path="bus" element={<Bus />} />
+          <Route path="trajets" element={<Trajets />} />
+          <Route path="comptes" element={<Comptes/>} />
         </Route>
         <Route path="*" element={<Error404 />} />
       </Routes>
